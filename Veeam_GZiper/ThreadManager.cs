@@ -6,7 +6,7 @@ namespace Veeam_GZiper
 {
     class ThreadManager
     {
-        private const ushort MaxCpuValue = 60;
+        private const ushort MaxCpuValue = 100;
         private const ushort BlocksForThread = 10;
         private const ushort SleepTime = 1000;
 

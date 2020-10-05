@@ -4,7 +4,7 @@ namespace Veeam_GZiper
 {
     class Program
     {
-        static void Main(string[] args)
+        static int Main(string[] args)
         {
             try
             {
@@ -23,6 +23,7 @@ namespace Veeam_GZiper
                     default:
                         throw new ArgumentException("Unsupported function! use \"compress\" or \"decompress\".");
                 }
+                return 0;
             }
             catch (ArgumentException e)
             {
@@ -39,6 +40,7 @@ namespace Veeam_GZiper
                 Console.WriteLine("Error has been occured!");
                 Console.WriteLine(e.Message);
             }
+            return 1;
         }
     }
 }
